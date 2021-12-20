@@ -19,7 +19,7 @@ typedef OnRangeSelected = void Function(
     DateTime? start, DateTime? end, DateTime focusedDay);
 enum RangeSelectionMode { disabled, toggledOff, toggledOn, enforced }
 
-class TableCalendar<T> extends StatefulWidget {
+class RigelCalendar<T> extends StatefulWidget {
   final dynamic locale;
   final DateTime? rangeStartDay;
   final List<String>? disabledDays;
@@ -66,7 +66,7 @@ class TableCalendar<T> extends StatefulWidget {
   final void Function(CalendarFormat format)? onFormatChanged;
   final void Function(PageController pageController)? onCalendarCreated;
 
-  TableCalendar({
+  RigelCalendar({
     Key? key,
     required DateTime focusedDay,
     required DateTime firstDay,
@@ -134,10 +134,10 @@ class TableCalendar<T> extends StatefulWidget {
         super(key: key);
 
   @override
-  TableCalendarState<T> createState() => TableCalendarState<T>();
+  RigelCalendarState<T> createState() => RigelCalendarState<T>();
 }
 
-class TableCalendarState<T> extends State<TableCalendar<T>> {
+class RigelCalendarState<T> extends State<RigelCalendar<T>> {
   late final PageController _pageController;
   late final ValueNotifier<DateTime> _focusedDay;
   late RangeSelectionMode _rangeSelectionMode;
@@ -155,7 +155,7 @@ class TableCalendarState<T> extends State<TableCalendar<T>> {
   }
 
   @override
-  void didUpdateWidget(TableCalendar<T> oldWidget) {
+  void didUpdateWidget(RigelCalendar<T> oldWidget) {
     super.didUpdateWidget(oldWidget);
 
     if (_focusedDay.value != widget.focusedDay) {
@@ -247,7 +247,7 @@ class TableCalendarState<T> extends State<TableCalendar<T>> {
           ),
         Flexible(
           flex: widget.shouldFillViewport ? 1 : 0,
-          child: TableCalendarBase(
+          child: RigelCalendarBase(
             onCalendarCreated: (pageController) {
               _pageController = pageController;
               widget.onCalendarCreated?.call(pageController);

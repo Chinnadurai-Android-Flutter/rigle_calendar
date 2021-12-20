@@ -4,7 +4,7 @@ import 'package:simple_gesture_detector/simple_gesture_detector.dart';
 import 'shared/utils.dart';
 import 'widgets/calendar_core.dart';
 
-class TableCalendarBase extends StatefulWidget {
+class RigelCalendarBase extends StatefulWidget {
   final DateTime firstDay;
   final DateTime lastDay;
   final DateTime focusedDay;
@@ -31,7 +31,7 @@ class TableCalendarBase extends StatefulWidget {
   final void Function(DateTime focusedDay)? onPageChanged;
   final void Function(PageController pageController)? onCalendarCreated;
 
-  TableCalendarBase({
+  RigelCalendarBase({
     Key? key,
     required this.firstDay,
     required this.lastDay,
@@ -71,10 +71,10 @@ class TableCalendarBase extends StatefulWidget {
         super(key: key);
 
   @override
-  _TableCalendarBaseState createState() => _TableCalendarBaseState();
+  _RigelCalendarBaseState createState() => _RigelCalendarBaseState();
 }
 
-class _TableCalendarBaseState extends State<TableCalendarBase>
+class _RigelCalendarBaseState extends State<RigelCalendarBase>
     with SingleTickerProviderStateMixin {
   late final ValueNotifier<double> pageHeight;
   late final PageController pageController;
@@ -101,7 +101,7 @@ class _TableCalendarBaseState extends State<TableCalendarBase>
   }
 
   @override
-  void didUpdateWidget(TableCalendarBase oldWidget) {
+  void didUpdateWidget(RigelCalendarBase oldWidget) {
     super.didUpdateWidget(oldWidget);
 
     if (focusedDay != widget.focusedDay ||

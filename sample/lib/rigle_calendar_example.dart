@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:rigle_calendar/rigel_soft_calendar.dart';
 
-class RigleCalendarExample extends StatefulWidget {
+class RigelCalendarExample extends StatefulWidget {
   @override
-  RigleCalendarState createState() => RigleCalendarState();
+  RigelCalendarState createState() => RigelCalendarState();
 }
 
-class RigleCalendarState extends State<RigleCalendarExample> {
+class RigelCalendarState extends State<RigelCalendarExample> {
   CalendarFormat calendarFormat = CalendarFormat.month;
   DateTime _focusedDay = DateTime.now();
   DateTime? _selectedDay;
@@ -17,7 +17,7 @@ class RigleCalendarState extends State<RigleCalendarExample> {
       appBar: AppBar(
         title: Text('Rigle Calendar'),
       ),
-      body: TableCalendar(
+      body: RigelCalendar(
         firstDay: DateTime(DateTime.now().year, DateTime.now().month, 1),
         lastDay: DateTime(DateTime.now().year, DateTime.now().month + 1, 0),
         // firstDay: DateTime(

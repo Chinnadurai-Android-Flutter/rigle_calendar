@@ -1,4 +1,4 @@
-# Rigle Calendar example
+# Rigel Calendar example
 
 Displays **Rigel Calendar** widget with a `ListView` underneath it.
 

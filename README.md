@@ -5,7 +5,7 @@ Displays **Rigel Calendar** widget with a `ListView` underneath it.
 | ![Image](https://raw.githubusercontent.com/Chinnadurai-Android-Flutter/rigle_calendar/master/screenshots%20/Screenshot_1640016464.png) | 
 | ![Image](https://raw.githubusercontent.com/Chinnadurai-Android-Flutter/rigle_calendar/master/screenshots%20/Screenshot_1640016466.png) |
 | ![Image](https://raw.githubusercontent.com/Chinnadurai-Android-Flutter/rigle_calendar/master/screenshots%20/Screenshot_1640016471.png) |
-| :------------: | :------------: |
+
 | **Rigel Calendar** with custom styles | **Table Calendar** with Builders |
 
 **Rigel Calendar** offers a lot of customization:

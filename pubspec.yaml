@@ -1,0 +1,23 @@
+name: rigle_calendar
+version: 0.0.1
+description: Cstomized calendar widget for Flutter.
+author: Chinnadurai Viswanathan <chinnaduraiv@live.in>
+homepage:
+
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  intl: ^0.17.0
+  simple_gesture_detector: ^0.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
